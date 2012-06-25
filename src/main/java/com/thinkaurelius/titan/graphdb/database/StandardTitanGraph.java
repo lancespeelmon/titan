@@ -344,7 +344,7 @@ public class StandardTitanGraph extends TitanBlueprintsGraph implements Internal
     private static boolean[] getAllowedDirections(InternalTitanQuery query) {
         boolean[] dirs = new boolean[4];
         if (query.queryProperties()) {
-            assert query.isAllowedDirection(EdgeDirection.OUT);
+            //assert query.isAllowedDirection(EdgeDirection.OUT);
             dirs[0]=true;
         }
         if (query.queryRelationships()) {
